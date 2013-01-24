@@ -9,7 +9,7 @@
     </div>
     <div id="page">
       <div id="content" class="text">
-        <p> This exciting text was brought to you from the University of Pennsylvania, in Philadelphia. It is just dummy text using the 'p' tag. Thank you for visiting this site!</p>
+        <p> This exciting text was brought to you from the University of Pennsylvania, in Philadelphia. It is just dummy text using the 'p' tag. Thank you for visiting this site! I hope the blinking header doesn't annoy you too much.</p>
       </div>
 
       <div id="Form">
@@ -33,14 +33,23 @@
       </div>
 
       <div id="info" class="text">
-        <p>This page was created on 23 Jan 2013.</p>
+        <p class="footprint">This page was created on 23 Jan 2013.</p>
       </div>
     </div>
   </body>
   <style type="text/css">
-    .title {color: red;}
-    .links {color:#d0e4fe;}
-    .text {color:blue;}
-    .body {background-color:#111111;}
+    .title {color: red; text-align:center; text-decoration:blink;}
+
+    a:link {color:#FF0000;}      /* unvisited link */
+    a:visited {color:#00FF00;}  /* visited link */
+    a:hover {color:#FF00FF;}  /* mouse over link */
+    a:active {color:#0000FF;}  /* selected link */ 
+
+    .text {color:white; font-family:Verdana, Geneva, sans-serif;}
+    p {text-indent:50px;}
+
+    body {background-color:#31312e;}
+    
+    .footprint {font-style: italic;}
   </style>
 </html>
